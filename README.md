@@ -14,10 +14,10 @@ MENTOR: NEELA SANTOSH
 
 DESCRIPTION: [Task - 2]
 
-This project involves designing and developing a real-time chat application utilizing Socket.IO—a JavaScript library that enables real-time, bi-directional communication between web clients and servers. The goal is to create a live chat system where users can join, send messages, and interact in real time with others in one or more chat rooms. The application will demonstrate full-stack development skills by integrating a responsive frontend with a Node.js backend using WebSockets for seamless, event-driven communication.
+Developed a real-time chat application utilizing Socket.IO a JavaScript library that enables real-time, bi-directional communication between web clients and servers. Developed a live chat system where users can join, send messages and interact in real time with others. This application will demonstrate full-stack development skills by integrating a responsive frontend with a Node.js backend using WebSockets for seamless, event-driven communication.
 
 Objective:
-The primary objective of this task is to build a functioning chat application that supports live messaging using WebSockets facilitated through Socket.IO. The app must allow multiple users to connect, send and receive messages instantly, and reflect these interactions across all connected clients in real time. This project highlights the power of real-time systems and is essential for understanding the basics of scalable communication technologies used in modern web applications like Slack, Discord, and WhatsApp Web.
+Built a functioning chat application that supports live messaging using WebSockets facilitated through Socket.IO. This app allows multiple users to connect, send and receive messages instantly, and reflect these interactions across all connected clients in real time. This project highlights the power of real-time systems and is essential for understanding the basics of scalable communication technologies used in modern web applications like Slack, Discord, and WhatsApp Web.
 
 Key Features:
 
