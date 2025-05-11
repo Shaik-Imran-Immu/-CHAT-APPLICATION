@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 
+  Real-Time Chat Application - Task 2
+-->
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Task - 2</title>
+  
+  <style>
+    /* Basic styling for a clean chat interface */
+    body { 
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /* Message list styling */
+    #messages { 
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      border: 1px solid #eee;
+      min-height: 300px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    
+    /* Individual message styling */
+    #messages li { 
+      padding: 8px 12px;
+      border-bottom: 1px solid #f5f5f5;
+    }
+    
+    /* Input field styling */
+    input { 
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ddd;
+      border-radius: 4px; 
+      }
+    
+    /* Send button styling */
+    button { 
+      padding: 10px 15px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    
+    button:hover {
+      background: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Chat Header -->
+  <h2>💬 Real-Time Chat</h2>
+  
+  <!-- Messages Container -->
+  <ul id="messages"></ul>
+  
+  <!-- Message Input Area -->
+  <div class="input-area">
+
+    <input 
+      id="messageInput" 
+      autocomplete="off" 
+      placeholder="Type your message..." 
+      onkeypress="handleKeyPress(event)" <!-- Allows Enter key to send -->
+    
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <!-- JavaScript Dependencies -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Allow sending messages by pressing Enter key
+    function handleKeyPress(e) {
+      if (e.key === 'Enter') {
+        sendMessage();
+      }
+    }
+  </script>
+</body>
+</html>
